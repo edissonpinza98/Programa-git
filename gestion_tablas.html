@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="./css/registro.css">
+</head>
+<body>
+    <div class="encabezado">
+        <div class="encabezado_superior">
+            <i class="fa fa-bars"></i>
+            <img src="tu-logo.png" alt="Logo" class="encabezado_logo">
+        </div>
+    </div>
+
+    <div class="botones">
+        <button id="pais">Seleccionar País</button>
+    </div>
+
+    <div class="registro">
+        <form action="gestion_tablas.php" method="POST">
+            <h1>Registro</h1>
+            <label for="tabla">Selecciona la tabla:</label>
+            <select id="tabla" name="tabla">
+                <option value="abogado">Abogado</option>
+                <option value="persona">Persona</option>
+                <option value="asesoria">Asesoría</option>
+                <option value="chat">Chat</option>
+                <option value="factura">Factura</option>
+                <option value="calificacion">Calificación</option>
+                <option value="soporte">Soporte</option>
+            </select>
+
+            <label for="campo1">Nombres:</label>
+            <input type="text" id="campo1" name="campo1" required>
+
+            <label for="campo2">Apellidos:</label>
+            <input type="text" id="campo2" name="campo2" required>
+
+            <label for="campo3">Cedula :</label>
+            <input type="text" id="campo3" name="campo3" required>
+
+            <label for="campo4">Celular:</label>
+            <input type="text" id="campo4" name="campo4" required>
+
+            <!-- Otros campos según la tabla seleccionada -->
+
+            <div class="botones-registro">
+                <button type="submit" name="crear" class="btn-1">Crear</button>
+                <button type="submit" name="leer" class="btn-1">Leer</button>
+                <button type="submit" name="actualizar" class="btn-1">Actualizar</button>
+                <button type="submit" name="eliminar" class="btn-1">Eliminar</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="soporte">
+        <i class="soporte_icono fa fa-question-circle"></i>
+    </div>
+
+    <footer class="footer">
+        <p class="derecho_autor">Creado por: <a href="https://www.PhoenixForce.com/" class="autor">PhoenixForce</a></p>
+    </footer>
+</body>
+</html>
+
